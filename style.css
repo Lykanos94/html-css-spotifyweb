@@ -101,6 +101,8 @@ main {
 
     align-self: flex-start;
 
+    flex-direction: column;
+
     background-color: black;
 
     color: white;
@@ -116,6 +118,8 @@ main {
     display: block;
 
     margin-top: 10px;
+
+    font-weight: bold;
 
 }
 
@@ -133,6 +137,67 @@ main {
 
 }
 
+.playlist h3{
+
+    margin-top: 15px;
+
+}
+
+.playlist > ul > li {
+
+    text-decoration: none;
+
+    margin-top: 20px;
+
+    color: grey;
+
+    font-weight: bold;
+
+} 
+
+.playlist div {
+
+    display: inline-block;
+
+    padding: 0 5px;
+
+    background-color: #A3A3A3;
+
+    font-weight: bold;
+
+    font-size: 50px;
+
+}
+
+div.crea {
+
+    margin-right: 10px;
+
+}
+
+div.finale-aside-bar {
+
+    margin-top: 40rem;
+
+}
+
+div.finale-aside-bar span {
+
+    margin: 15px;
+
+}
+
+div.div-riga {
+
+    border: 1px solid gray;
+
+    margin-left: 15px;
+
+    height: 2px;
+
+    width: 75%;
+
+}
 /* aside bar */
 /* container */
 .container {
