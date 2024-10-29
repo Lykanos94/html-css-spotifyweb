@@ -8,6 +8,12 @@
 
 }
 
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
 .debug {
 
     background-color: red;
@@ -34,7 +40,7 @@ header {
 
 .logo {
 
-    width: 12rem;
+    width: 14rem;
 
     height: 100%;
 
@@ -76,9 +82,14 @@ header {
 /* fine header */
 /* main section */
 
+
 main {
 
     display: flex;
+
+    flex-direction: row;
+
+    justify-content: flex-start;
 
     background-color: #141922;
 
@@ -86,30 +97,123 @@ main {
 
 .aside-left {
 
+    display: flex;
+
+    align-self: flex-start;
+
     background-color: black;
 
-    width: 12rem;
+    width: 14rem;
 
-    min-height: 1000px;
+    min-height: 70rem;
+
+}
+
+.container {
+
+    display: flex;
+
+    flex-direction: flex-start;
+
+    flex-direction: column;
 
 }
 
 .up-containers {
 
+    margin: 0 auto;
+
+    margin-top: 20px;
+
+    margin-bottom: 30px;
+
+    margin-right: 220px;
+
     display: flex;
 
-    
-
-    
+    gap: 25px;
 
 }
 
 .up-containers a {
 
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    font-size: large;
+
     font-weight: bold;
 
     text-decoration: none;
 
+    color: grey;
+
+    justify-content: space-between;
+
+}
+
+
+
+.row {
+
+    display: flex;
+
+    flex-direction: column;
+
+    margin-left: 2.5rem;
+
+    margin-top: 4.5rem;
+
+}
+
+.row h2 {
+
+    margin-bottom: 2rem;
+
     color: white;
 
 }
+
+.col {
+
+    display: flex;
+
+    align-self: flex-start;
+
+    gap: 20px;
+
+}
+
+.card {
+
+    min-width: 200px;
+
+    min-height: 200px;
+
+    flex-direction: column;
+
+    text-align: center;
+
+}
+
+img {
+
+    width: 200px;
+
+    height: 200px;
+
+}
+/* fine main */
+/* footer */
+
+footer {
+
+    background-color: #282828;
+
+    min-height: 5.5rem;
+
+}
+
