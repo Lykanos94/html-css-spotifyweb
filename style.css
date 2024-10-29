@@ -44,9 +44,11 @@ header {
 
 .img-logo {
 
-    max-width: 70%;
+    max-width: 90%;
 
-    margin-left: 5px;
+    margin-left: 10px;
+
+    padding: 20px;
 
 }
 
@@ -60,7 +62,7 @@ header {
 
     padding: 10px;
 
-    
+    margin-right: 10px;
 
 }
 
@@ -76,6 +78,8 @@ header {
 
 main {
 
+    display: flex;
+
     background-color: #141922;
 
 }
@@ -87,5 +91,25 @@ main {
     width: 12rem;
 
     min-height: 1000px;
+
+}
+
+.up-containers {
+
+    display: flex;
+
+    
+
+    
+
+}
+
+.up-containers a {
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    color: white;
 
 }
