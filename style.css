@@ -14,72 +14,6 @@ body {
 
 }
 
-.debug {
-
-    background-color: red;
-
-}
-
-/* header */
-
-header {
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: space-between;
-
-    background-color: #080B12;
-
-    width: 100%;
-
-    min-height: 4.5rem;
-
-}
-
-.logo {
-
-    width: 14rem;
-
-    height: 100%;
-
-    background-color: black;
-
-}
-
-.img-logo {
-
-    max-width: 90%;
-
-    margin-left: 10px;
-
-    padding: 20px;
-
-}
-
-.upgrade {
-
-    color: white;
-
-    border-radius: 50px;
-
-    border: 2px solid white;
-
-    padding: 10px;
-
-    margin-right: 10px;
-
-}
-
-.upgrade a {
-
-    text-decoration: none;
-
-    color: white;
-
-}
-/* fine header */
 /* main section */
 
 
@@ -92,6 +26,44 @@ main {
     justify-content: flex-start;
 
     background-color: #141922;
+
+}
+
+div.upgrade {
+
+    display: block;
+
+    margin: 0 auto;
+
+    width: 150px;
+
+    height: 30px;
+
+    margin-top: 30px;
+
+    margin-left: 1700px;
+
+    
+
+}
+
+div.upgrade a {
+
+    border-radius: 50px;
+
+    padding: 10px;
+
+    color: white;
+
+    text-decoration: none;
+
+    border: 2px solid white;
+
+}
+
+div.upgrade:hover {
+
+    transform: scale(1.1);
 
 }
 /* aside bar */
@@ -107,9 +79,19 @@ main {
 
     color: white;
 
-    width: 14rem;
+    width: 12vw;
 
-    min-height: 78rem;
+    height: 1320px;
+
+}
+
+.img-logo {
+
+    align-self: flex-start;
+
+    width: 50%;
+
+    height: 50px;
 
 }
 
@@ -121,7 +103,17 @@ main {
 
     font-weight: bold;
 
+    margin-left: 10px;
+
 }
+
+.aside-bar > span :hover {
+
+    border-left: 2px solid lightgreen;
+
+    color: white;
+
+}  
 
 .aside-left span i {
 
@@ -133,7 +125,7 @@ main {
 
     text-decoration: none;
 
-    color: white;
+    color: grey;
 
 }
 
@@ -147,6 +139,8 @@ main {
 
     text-decoration: none;
 
+    list-style-type: none;
+
     margin-top: 20px;
 
     color: grey;
@@ -154,6 +148,14 @@ main {
     font-weight: bold;
 
 } 
+
+ul li:hover {
+
+    color: white;
+
+}
+
+
 
 .playlist div {
 
@@ -178,6 +180,12 @@ div.crea {
 div.finale-aside-bar {
 
     margin-top: 40rem;
+
+}
+
+div.finale-aside-bar span:hover {
+
+    color: white !important;
 
 }
 
@@ -215,13 +223,15 @@ div.div-riga {
 
     flex-direction: column;
 
+    margin-top: 100px;
+
 }
 
 .up-containers {
 
     margin: 0 auto;
 
-    margin-top: 20px;
+    margin-top: 15px;
 
     margin-bottom: 30px;
 
@@ -250,6 +260,14 @@ div.div-riga {
     color: grey;
 
     justify-content: space-between;
+
+}
+
+.up-containers a:hover {
+
+    color: white;
+
+    border-bottom: 2px solid lightgreen;
 
 }
 
@@ -295,6 +313,8 @@ div.div-riga {
 
     text-align: center;
 
+    position: relative;
+
 }
 
 img.img-container {
@@ -303,6 +323,29 @@ img.img-container {
 
     height: 200px;
 
+    object-fit: cover;
+
+}
+
+img.border-radius {
+
+    border-radius: 50%;
+
+}
+
+.card i {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.card:hover i {
+    opacity: 1;
 }
 
 .under-card {
@@ -341,6 +384,10 @@ footer {
 
     padding: 25px;
 
+    position: sticky;
+
+    bottom: 0;
+
 }
 /* footer div sinistro */
 .div-left {
@@ -373,17 +420,17 @@ span.sinister {
 
     font-weight: bold;
 
-    margin-left: 5px;
+    margin-left: 10px;
 
 }
 
 span.name {
 
-    display: block;
+    display: flex;
 
     color: rgba(211, 211, 211, 0.349);
 
-    margin-left: 5px;
+    margin-left: 10px;
 
 }
 
@@ -402,6 +449,25 @@ span.folder {
     color: rgba(211, 211, 211, 0.349);
 
 }
+
+span.name:hover {
+
+    color: white;
+
+}
+
+span.heart:hover {
+
+    color: white;
+
+}
+
+span.folder:hover {
+
+    color: white;
+
+}
+
 /* footer div sinistro */
 /* footer div centrale */
 
@@ -424,6 +490,12 @@ div.icons {
     color: white;
 
     margin-left: 25px;
+
+}
+
+.icons i:nth-child(3):hover {
+
+    transform: scale(1.3);
 
 }
 
@@ -496,3 +568,47 @@ div.second-bar {
 /* footer div centrale */
 /* footer div rigth */
 
+.div-rigth {
+
+    display: flex;
+
+    justify-content: center;
+
+}
+
+div.div-rigth > div > span {
+
+    margin-left: 10px;
+
+    color: white;
+
+}
+
+
+div.bar-rigth {
+
+    display: flex;
+
+    background-color: rgba(211, 211, 211, 0.349);
+
+    width: 100px;
+
+    height: 3px;
+
+    margin-left: 10px;
+
+    margin-top: 10px;
+
+}
+
+div.under-bar-rigth {
+
+    background-color: rgba(211, 211, 211, 0.349);
+
+    width: 50px;
+
+    height: 3px;
+
+}
+/* footer div rigth */
+/* media query */
