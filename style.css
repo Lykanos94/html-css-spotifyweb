@@ -163,15 +163,15 @@ main {
 
     background-color: #A3A3A3;
 
-    font-weight: bold;
-
-    font-size: 50px;
+    font-size: 30px;
 
 }
 
 div.crea {
 
     margin-right: 10px;
+
+    color: black;
 
 }
 
@@ -187,6 +187,12 @@ div.finale-aside-bar span {
 
 }
 
+div.finale-aside-bar span:first-of-type {
+
+    color: grey;
+
+}
+
 div.div-riga {
 
     border: 1px solid gray;
@@ -199,6 +205,7 @@ div.div-riga {
 
 }
 /* aside bar */
+/* main */
 /* container */
 .container {
 
@@ -324,9 +331,168 @@ img.img-container {
 
 footer {
 
+    display: flex;
+
+    justify-content: space-between;
+
     background-color: #282828;
 
     min-height: 5.5rem;
 
+    padding: 25px;
+
 }
+/* footer div sinistro */
+.div-left {
+
+    display: flex;
+
+    width: 150px;
+
+    height: 40px;
+
+    flex-direction: flex-start;
+
+    align-items: center;
+
+}
+
+.div-left img {
+
+width: 50px;
+
+height: 50px;
+
+}
+
+span.sinister {
+
+    text-align: center;
+
+    color: white;
+
+    font-weight: bold;
+
+    margin-left: 5px;
+
+}
+
+span.name {
+
+    display: block;
+
+    color: rgba(211, 211, 211, 0.349);
+
+    margin-left: 5px;
+
+}
+
+span.heart {
+
+    margin-left: 50px;
+
+    color: rgba(211, 211, 211, 0.349);
+
+}
+
+span.folder {
+
+    margin-left: 10px;
+
+    color: rgba(211, 211, 211, 0.349);
+
+}
+/* footer div sinistro */
+/* footer div centrale */
+
+div.div-center {
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    width: 250px;
+
+    height: 100%;
+
+}
+
+div.icons {
+
+    color: white;
+
+    margin-left: 25px;
+
+}
+
+div.icons i {
+
+    margin-left: 20px;
+
+}
+
+div.time {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+div.time span {
+
+    display: flex;
+
+    color: white;
+
+    font-size: 10px;
+
+}
+
+span.venticinque {
+
+    justify-content: flex-start;
+
+    width: 190%;
+
+    align-items: center;
+
+}
+
+span.trentacinque {
+
+    justify-content: flex-end;
+
+    margin-left: 445px;
+
+}
+
+
+div.bar {
+
+    background-color: rgba(211, 211, 211, 0.349);
+
+    width: 400px;
+
+    height: 3px;
+
+}
+
+div.second-bar {
+
+    background-color: rgba(211, 211, 211, 0.349);
+
+    width: 150px;
+
+    height: 3px;
+
+}
+/* footer div centrale */
+/* footer div rigth */
 
