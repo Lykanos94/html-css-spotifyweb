@@ -10,6 +10,8 @@
 
 body {
 
+    background-color: #141922;
+
     font-family: Arial, Helvetica, sans-serif;
 
 }
@@ -24,8 +26,6 @@ main {
     flex-direction: row;
 
     justify-content: flex-start;
-
-    background-color: #141922;
 
 }
 
@@ -42,8 +42,6 @@ div.upgrade {
     margin-top: 30px;
 
     margin-left: 1700px;
-
-    
 
 }
 
@@ -79,9 +77,19 @@ div.upgrade:hover {
 
     color: white;
 
-    width: 12vw;
+    width: 180px;
 
     height: 1320px;
+
+    position: relative;
+
+}
+
+.logo {
+
+    position: absolute;
+    
+    top: 0;
 
 }
 
@@ -89,7 +97,7 @@ div.upgrade:hover {
 
     align-self: flex-start;
 
-    width: 50%;
+    width: 130px;
 
     height: 50px;
 
@@ -219,8 +227,6 @@ div.div-riga {
 
     display: flex;
 
-    flex-direction: flex-start;
-
     flex-direction: column;
 
     margin-top: 100px;
@@ -231,15 +237,11 @@ div.div-riga {
 
     margin: 0 auto;
 
-    margin-top: 15px;
-
-    margin-bottom: 30px;
-
-    margin-right: 220px;
-
     display: flex;
 
     gap: 25px;
+
+    margin-top: 50px;
 
 }
 
@@ -271,7 +273,7 @@ div.div-riga {
 
 }
 
-
+/* row e col */
 
 .row {
 
@@ -378,9 +380,13 @@ footer {
 
     justify-content: space-between;
 
+    align-items: center;
+
     background-color: #282828;
 
     min-height: 5.5rem;
+
+    width: 100%;
 
     padding: 25px;
 
@@ -565,6 +571,12 @@ div.second-bar {
     height: 3px;
 
 }
+
+div.second-bar:hover {
+
+    background-color: yellowgreen;
+
+}
 /* footer div centrale */
 /* footer div rigth */
 
@@ -610,5 +622,61 @@ div.under-bar-rigth {
     height: 3px;
 
 }
+
+div.under-bar-rigth:hover {
+
+    background-color: yellowgreen;
+
+}
 /* footer div rigth */
 /* media query */
+
+@media (min-width: 1280px) {
+    /* stili per desktop */
+    
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer {
+        min-height: 5.5rem;
+        min-width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+    /* stili per tablet */
+
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .card {
+        flex-wrap: wrap;
+        width: 40%;
+
+    }
+    .footer {
+        height: 90px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    /* stili per mobile */
+    .container {
+        width: 100%;
+        margin: 0;
+    }
+    .row {
+        display: block;
+    }
+
+    .footer {
+        height: 60px;
+        width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+}
