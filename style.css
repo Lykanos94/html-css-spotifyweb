@@ -307,9 +307,11 @@ div.div-riga {
 
 .card {
 
-    min-width: 200px;
+    /* min-width: 200px;
 
-    min-height: 200px;
+    min-height: 200px; */
+
+    flex: 1;
 
     flex-direction: column;
 
@@ -636,12 +638,19 @@ div.under-bar-rigth:hover {
     
     .row {
         display: flex;
-        flex-wrap: wrap;
     }
+
+    .col {
+
+        flex-basis: 33.33%;
+
+    }
+    
     .footer {
         min-height: 5.5rem;
         min-width: 100%;
     }
+
 }
 
 @media (min-width: 768px) and (max-width: 1279px) {
@@ -652,12 +661,19 @@ div.under-bar-rigth:hover {
         display: flex;
         flex-wrap: wrap;
     }
-    .card {
+
+    .col {
+
+        display: flex;
         flex-wrap: wrap;
-        width: 40%;
+        flex-basis: 50%;
 
     }
+    .card {
+        flex: 1;
+    }
     .footer {
+        display: flex;
         height: 90px;
         width: 100%;
     }
@@ -665,18 +681,40 @@ div.under-bar-rigth:hover {
 
 @media (max-width: 767px) {
     /* stili per mobile */
+
     .container {
+        display: flex;
         width: 100%;
         margin: 0;
     }
+
     .row {
-        display: block;
+
+        display: flex;    
+
+    }
+
+    .col {
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 50%;
+    }
+
+    .card {
+        flex-wrap: wrap;
+        flex: 1;
     }
 
     .footer {
-        height: 60px;
+        display: flex;
+        position: sticky;
+        height: 80px;
         width: 100%;
         padding: 10px;
         text-align: center;
+        align-items: center;
     }
 }
+
+
