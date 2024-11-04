@@ -79,7 +79,7 @@ div.upgrade:hover {
 
     width: 180px;
 
-    height: 1320px;
+    height: calc(100% - 100px);
 
     position: relative;
 
@@ -123,13 +123,13 @@ div.upgrade:hover {
 
 }  
 
-.aside-left span i {
+.aside-bar span i {
 
     margin-right: 10px;
 
 }
 
-.aside-left span a {
+.aside-bar span a {
 
     text-decoration: none;
 
@@ -140,6 +140,14 @@ div.upgrade:hover {
 .playlist h3{
 
     margin-top: 15px;
+
+}
+
+.playlist {
+
+    height: 100%;
+
+    overflow: auto;
 
 }
 
@@ -187,7 +195,7 @@ div.crea {
 
 div.finale-aside-bar {
 
-    margin-top: 40rem;
+    margin-top: 500px;
 
 }
 
@@ -229,7 +237,9 @@ div.div-riga {
 
     flex-direction: column;
 
-    margin-top: 100px;
+    margin-top: 15px;
+
+    height: 1100px;
 
 }
 
@@ -386,7 +396,7 @@ footer {
 
     background-color: #282828;
 
-    min-height: 5.5rem;
+    min-height: 100px;
 
     width: 100%;
 
